@@ -84,32 +84,40 @@ body {
 .hero-section .container {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 3rem;
 }
 
 .hero-content {
     flex: 1;
+    padding: 2rem 0;
+    margin-left: 1rem;
 }
 
 .hero-title {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 700;
+    line-height: 1.2;
+    padding-left: 0.5rem;
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     opacity: 0.9;
+    line-height: 1.5;
+    padding-left: 0.5rem;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
 }
 
 .hero-image {
@@ -206,7 +214,7 @@ body {
 /* 快速预约区域 */
 .quick-booking {
     text-align: center;
-    padding: 3rem 0;
+    padding: 4rem 2rem;
     background: #f8f9fa;
 }
 
@@ -279,7 +287,7 @@ body {
 
 /* 服务概览区域 */
 .services-overview {
-    padding: 3rem 0;
+    padding: 4rem 2rem;
 }
 
 .services-overview h2 {
@@ -296,7 +304,7 @@ body {
 /* 特色功能区域 */
 .why-choose-us {
     background: #f8f9fa;
-    padding: 3rem 0;
+    padding: 4rem 2rem;
 }
 
 .why-choose-us h2 {
@@ -378,7 +386,7 @@ body {
 
 /* 客户评价区域 */
 .testimonials {
-    padding: 3rem 0;
+    padding: 4rem 2rem;
 }
 
 .testimonials h2 {
@@ -423,7 +431,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 /* 表单样式 */
@@ -1666,10 +1674,51 @@ footer {
     .hero-section .container {
         flex-direction: column;
         text-align: center;
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+    
+    .hero-content {
+        margin-left: 0;
+        padding: 1rem 0;
     }
     
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        padding-left: 0;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .quick-booking {
+        padding: 3rem 1rem;
+    }
+    
+    .services-overview {
+        padding: 3rem 1rem;
+    }
+    
+    .why-choose-us {
+        padding: 3rem 1rem;
+    }
+    
+    .testimonials {
+        padding: 3rem 1rem;
     }
     
     .about-content {
