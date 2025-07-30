@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理 - 美丽人生美容院</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>美丽人生美容院</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">在线预约</a>
+                <a href="query.html">查询预约</a>
+                <a href="admin.html" class="active">后台管理</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="admin-section">
+            <h2>预约管理后台</h2>
+            
+            <div class="admin-controls">
+                <div class="filter-controls">
+                    <label for="statusFilter">筛选状态：</label>
+                    <select id="statusFilter">
+                        <option value="">全部状态</option>
+                        <option value="pending">待确认</option>
+                        <option value="confirmed">已确认</option>
+                        <option value="completed">已完成</option>
+                        <option value="cancelled">已取消</option>
+                    </select>
+                    
+                    <label for="dateFilter">筛选日期：</label>
+                    <input type="date" id="dateFilter">
+                    
+                    <button id="refreshBtn" class="refresh-btn">刷新数据</button>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>今日预约</h3>
+                    <div id="todayCount" class="stat-number">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>待确认</h3>
+                    <div id="pendingCount" class="stat-number">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>已确认</h3>
+                    <div id="confirmedCount" class="stat-number">0</div>
+                </div>
+            </div>
+
+            <div class="bookings-table-container">
+                <table id="bookingsTable" class="bookings-table">
+                    <thead>
+                        <tr>
+                            <th>预约时间</th>
+                            <th>客户信息</th>
+                            <th>服务项目</th>
+                            <th>联系电话</th>
+                            <th>状态</th>
+                            <th>备注</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookingsTableBody">
+                        <!-- 预约数据将通过JavaScript动态加载 -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 美丽人生美容院. 版权所有</p>
+    </footer>
+
+    <!-- 成功/错误提示模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

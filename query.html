@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询预约 - 美丽人生美容院</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>美丽人生美容院</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">在线预约</a>
+                <a href="query.html" class="active">查询预约</a>
+                <a href="admin.html">后台管理</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="query-section">
+            <h2>查询预约记录</h2>
+            <div class="query-form-container">
+                <form id="queryForm" class="query-form">
+                    <div class="form-group">
+                        <label for="queryPhone">请输入预约时的手机号码 *</label>
+                        <input type="tel" id="queryPhone" name="queryPhone" required pattern="[0-9]{11}" placeholder="例：13812345678">
+                    </div>
+                    <button type="submit" class="submit-btn">查询预约</button>
+                </form>
+            </div>
+
+            <div id="queryResults" class="query-results" style="display: none;">
+                <h3>您的预约记录</h3>
+                <div id="bookingsList" class="bookings-list">
+                    <!-- 查询结果将在这里显示 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 美丽人生美容院. 版权所有</p>
+    </footer>
+
+    <!-- 成功/错误提示模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="query.js"></script>
+</body>
+</html>
