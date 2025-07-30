@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 美丽人生美容院</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>美丽人生美容院</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="services.html">服务项目</a>
+                <a href="team.html">专业团队</a>
+                <a href="gallery.html">作品展示</a>
+                <a href="booking.html">在线预约</a>
+                <a href="query.html">查询预约</a>
+                <a href="contact.html" class="active">联系我们</a>
+                <a href="admin.html">管理后台</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 联系信息头部 -->
+        <section class="contact-header">
+            <h1>联系我们</h1>
+            <p>欢迎您随时与我们联系，我们将竭诚为您服务</p>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="contact-info">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>服务热线</h3>
+                    <p class="contact-detail">400-888-8888</p>
+                    <p class="contact-time">服务时间：9:00-21:00</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>微信咨询</h3>
+                    <p class="contact-detail">meili-life</p>
+                    <p class="contact-time">在线客服：9:00-21:00</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>邮箱联系</h3>
+                    <p class="contact-detail">info@meili-life.com</p>
+                    <p class="contact-time">24小时内回复</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>店铺地址</h3>
+                    <p class="contact-detail">北京市朝阳区三里屯太古里南街12号2楼</p>
+                    <p class="contact-time">地铁10号线团结湖站A口</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 营业时间 -->
+        <section class="business-hours">
+            <h2>营业时间</h2>
+            <div class="hours-table">
+                <div class="hours-row">
+                    <span class="day">周一至周日</span>
+                    <span class="time">9:00 - 21:00</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">午休时间</span>
+                    <span class="time">12:00 - 14:00</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">节假日</span>
+                    <span class="time">正常营业</span>
+                </div>
+            </div>
+            <p class="hours-note">* 建议提前预约，确保您能享受到最佳的服务体验</p>
+        </section>
+
+        <!-- 地图区域 -->
+        <section class="map-section">
+            <h2>店铺位置</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h3>🗺️ 位置示意图</h3>
+                        <p><strong>美丽人生美容院</strong></p>
+                        <p>📍 北京市朝阳区三里屯太古里南街12号2楼</p>
+                        <p>🚇 地铁10号线团结湖站A口步行5分钟</p>
+                        <p>🚌 公交站：三里屯站</p>
+                        <p>🅿️ 停车：太古里地下停车场</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 在线留言 -->
+        <section class="message-section">
+            <h2>在线留言</h2>
+            <div class="message-form-container">
+                <form id="messageForm" class="message-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="messageName">您的姓名 *</label>
+                            <input type="text" id="messageName" name="messageName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="messagePhone">联系电话 *</label>
+                            <input type="tel" id="messagePhone" name="messagePhone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="messageEmail">邮箱地址</label>
+                        <input type="email" id="messageEmail" name="messageEmail">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="messageSubject">咨询主题</label>
+                        <select id="messageSubject" name="messageSubject">
+                            <option value="">请选择咨询主题</option>
+                            <option value="service">服务咨询</option>
+                            <option value="booking">预约相关</option>
+                            <option value="price">价格咨询</option>
+                            <option value="complaint">意见建议</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="messageContent">留言内容 *</label>
+                        <textarea id="messageContent" name="messageContent" rows="5" required placeholder="请详细描述您的问题或建议..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">发送留言</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 快速联系 -->
+        <section class="quick-contact">
+            <h2>快速联系方式</h2>
+            <div class="quick-contact-options">
+                <a href="tel:400-888-8888" class="quick-contact-btn">
+                    <span class="icon">📞</span>
+                    <span>立即致电</span>
+                </a>
+                <a href="booking.html" class="quick-contact-btn">
+                    <span class="icon">📅</span>
+                    <span>在线预约</span>
+                </a>
+                <a href="#" class="quick-contact-btn" onclick="alert('请扫描店内二维码添加微信客服')">
+                    <span class="icon">💬</span>
+                    <span>微信咨询</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 美丽人生美容院. 版权所有</p>
+    </footer>
+
+    <!-- 成功提示模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

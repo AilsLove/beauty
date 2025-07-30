@@ -14,74 +14,103 @@
                 <h1>美丽人生美容院</h1>
             </div>
             <div class="nav-links">
-                <a href="index.html" class="active">在线预约</a>
+                <a href="index.html" class="active">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="services.html">服务项目</a>
+                <a href="team.html">专业团队</a>
+                <a href="gallery.html">作品展示</a>
+                <a href="booking.html">在线预约</a>
                 <a href="query.html">查询预约</a>
-                <a href="admin.html">后台管理</a>
+                <a href="contact.html">联系我们</a>
+                <a href="admin.html">管理后台</a>
             </div>
         </nav>
     </header>
 
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">美丽人生，从这里开始</h1>
+            <p class="hero-subtitle">专业美容护理，让您焕发自然光彩</p>
+            <div class="hero-buttons">
+                <a href="booking.html" class="btn btn-primary">立即预约</a>
+                <a href="services.html" class="btn btn-secondary">了解服务</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <span>🌸 专业美容护理</span>
+            </div>
+        </div>
+    </section>
+
     <main class="container">
-        <section class="booking-section">
-            <h2>在线预约服务</h2>
-            <div class="booking-form-container">
-                <form id="bookingForm" class="booking-form">
-                    <div class="form-group">
-                        <label for="customerName">姓名 *</label>
-                        <input type="text" id="customerName" name="customerName" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="customerPhone">联系电话 *</label>
-                        <input type="tel" id="customerPhone" name="customerPhone" required pattern="[0-9]{11}">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="customerEmail">邮箱（可选）</label>
-                        <input type="email" id="customerEmail" name="customerEmail">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="serviceSelect">选择服务 *</label>
-                        <select id="serviceSelect" name="serviceSelect" required>
-                            <option value="">请选择服务项目</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="bookingDate">预约日期 *</label>
-                        <input type="date" id="bookingDate" name="bookingDate" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="bookingTime">预约时间 *</label>
-                        <select id="bookingTime" name="bookingTime" required>
-                            <option value="">请选择时间</option>
-                            <option value="09:00">09:00</option>
-                            <option value="10:00">10:00</option>
-                            <option value="11:00">11:00</option>
-                            <option value="14:00">14:00</option>
-                            <option value="15:00">15:00</option>
-                            <option value="16:00">16:00</option>
-                            <option value="17:00">17:00</option>
-                            <option value="18:00">18:00</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="notes">备注信息</label>
-                        <textarea id="notes" name="notes" rows="3" placeholder="有特殊需求请在此说明..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">确认预约</button>
-                </form>
+        <!-- 快速预约区域 -->
+        <section class="quick-booking">
+            <h2>快速预约</h2>
+            <p>选择您喜欢的服务，立即在线预约</p>
+            <div class="quick-booking-grid" id="quickBookingGrid">
+                <!-- 快速预约选项将动态加载 -->
             </div>
         </section>
 
-        <section class="services-display">
-            <h3>我们的服务项目</h3>
+        <!-- 服务概览 -->
+        <section class="services-overview">
+            <h2>我们的专业服务</h2>
             <div id="servicesGrid" class="services-grid">
                 <!-- 服务项目将通过JavaScript动态加载 -->
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn btn-outline">查看全部服务</a>
+            </div>
+        </section>
+
+        <!-- 为什么选择我们 -->
+        <section class="why-choose-us">
+            <h2>为什么选择美丽人生</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👩‍⚕️</div>
+                    <h3>专业团队</h3>
+                    <p>拥有多年经验的专业美容师团队，为您提供贴心服务</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>天然产品</h3>
+                    <p>精选优质天然美容产品，安全温和，呵护您的肌肤</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>个性定制</h3>
+                    <p>根据您的肌肤状况，量身定制专属美容护理方案</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>品质保证</h3>
+                    <p>严格的服务标准和质量保证，让您享受五星级体验</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户评价 -->
+        <section class="testimonials">
+            <h2>客户好评</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"服务非常专业，美容师很有耐心，效果超出预期！"</p>
+                    <div class="testimonial-author">- 李女士</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"环境优雅，服务贴心，是我见过最好的美容院。"</p>
+                    <div class="testimonial-author">- 王女士</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"价格合理，效果显著，已经推荐给身边的朋友了。"</p>
+                    <div class="testimonial-author">- 张女士</div>
+                </div>
             </div>
         </section>
     </main>
@@ -99,6 +128,6 @@
     </div>
 
     <script src="config.js"></script>
-    <script src="main.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>

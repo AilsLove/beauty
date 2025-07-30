@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务项目 - 美丽人生美容院</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>美丽人生美容院</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="services.html" class="active">服务项目</a>
+                <a href="team.html">专业团队</a>
+                <a href="gallery.html">作品展示</a>
+                <a href="booking.html">在线预约</a>
+                <a href="query.html">查询预约</a>
+                <a href="contact.html">联系我们</a>
+                <a href="admin.html">管理后台</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 服务介绍头部 -->
+        <section class="services-header">
+            <h1>我们的专业服务</h1>
+            <p>为您提供全方位的美容护理服务，让美丽成为一种生活方式</p>
+        </section>
+
+        <!-- 服务项目详细列表 -->
+        <section class="services-detailed">
+            <div id="servicesDetailGrid" class="services-detail-grid">
+                <!-- 服务项目详情将通过JavaScript动态加载 -->
+            </div>
+        </section>
+
+        <!-- 服务流程 -->
+        <section class="service-process">
+            <h2>服务流程</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>咨询了解</h3>
+                    <p>专业美容师为您分析肌肤状况，了解您的需求和期望</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>方案制定</h3>
+                    <p>根据您的肌肤特点，制定个性化的美容护理方案</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>专业护理</h3>
+                    <p>使用专业设备和优质产品，进行精心的美容护理</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>效果跟踪</h3>
+                    <p>定期跟踪护理效果，适时调整方案，确保最佳效果</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 立即预约 -->
+        <section class="cta-section">
+            <h2>选择您需要的服务</h2>
+            <p>立即预约，享受专业的美容护理体验</p>
+            <div class="cta-buttons">
+                <a href="booking.html" class="btn btn-primary">立即预约</a>
+                <a href="contact.html" class="btn btn-secondary">咨询详情</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 美丽人生美容院. 版权所有</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

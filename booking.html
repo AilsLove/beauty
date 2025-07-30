@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线预约 - 美丽人生美容院</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>美丽人生美容院</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="services.html">服务项目</a>
+                <a href="team.html">专业团队</a>
+                <a href="gallery.html">作品展示</a>
+                <a href="booking.html" class="active">在线预约</a>
+                <a href="query.html">查询预约</a>
+                <a href="contact.html">联系我们</a>
+                <a href="admin.html">管理后台</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="booking-section">
+            <h2>在线预约服务</h2>
+            <div class="booking-form-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="customerName">姓名 *</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerPhone">联系电话 *</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" required pattern="[0-9]{11}">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerEmail">邮箱（可选）</label>
+                        <input type="email" id="customerEmail" name="customerEmail">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="serviceSelect">选择服务 *</label>
+                        <select id="serviceSelect" name="serviceSelect" required>
+                            <option value="">请选择服务项目</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bookingDate">预约日期 *</label>
+                        <input type="date" id="bookingDate" name="bookingDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bookingTime">预约时间 *</label>
+                        <select id="bookingTime" name="bookingTime" required>
+                            <option value="">请选择时间</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">备注信息</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="有特殊需求请在此说明..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">确认预约</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="services-display">
+            <h3>我们的服务项目</h3>
+            <div id="servicesGrid" class="services-grid">
+                <!-- 服务项目将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 美丽人生美容院. 版权所有</p>
+    </footer>
+
+    <!-- 成功/错误提示模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

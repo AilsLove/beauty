@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品展示 - 美丽人生美容院</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>美丽人生美容院</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="services.html">服务项目</a>
+                <a href="team.html">专业团队</a>
+                <a href="gallery.html" class="active">作品展示</a>
+                <a href="booking.html">在线预约</a>
+                <a href="query.html">查询预约</a>
+                <a href="contact.html">联系我们</a>
+                <a href="admin.html">管理后台</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 作品展示头部 -->
+        <section class="gallery-header">
+            <h1>客户案例展示</h1>
+            <p>见证每一份美丽的蜕变，分享成功的护理案例</p>
+        </section>
+
+        <!-- 作品分类筛选 -->
+        <section class="gallery-filters">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">全部作品</button>
+                <button class="filter-btn" data-category="facial">面部护理</button>
+                <button class="filter-btn" data-category="lashes">睫毛嫁接</button>
+                <button class="filter-btn" data-category="eyebrows">眉毛造型</button>
+                <button class="filter-btn" data-category="nails">美甲艺术</button>
+                <button class="filter-btn" data-category="body">身体护理</button>
+            </div>
+        </section>
+
+        <!-- 作品展示网格 -->
+        <section class="gallery-grid-section">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- 面部护理案例 -->
+                <div class="gallery-item" data-category="facial">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>🌸 面部护理前后对比</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>深层清洁护理</h3>
+                        <p>客户年龄：28岁<br>护理周期：4次<br>改善效果：毛孔收缩，肌肤光泽度提升</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facial">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>✨ 抗衰老护理效果</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>抗衰老护理</h3>
+                        <p>客户年龄：35岁<br>护理周期：6次<br>改善效果：细纹减淡，肌肤紧致度改善</p>
+                    </div>
+                </div>
+
+                <!-- 睫毛嫁接案例 -->
+                <div class="gallery-item" data-category="lashes">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>👁️ 睫毛嫁接效果</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>自然款睫毛嫁接</h3>
+                        <p>嫁接类型：D卷自然款<br>维持时间：5周<br>效果特点：自然浓密，根根分明</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lashes">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>💫 浓密睫毛造型</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>浓密款睫毛嫁接</h3>
+                        <p>嫁接类型：CC卷浓密款<br>维持时间：4周<br>效果特点：浓密卷翘，魅力动人</p>
+                    </div>
+                </div>
+
+                <!-- 眉毛造型案例 -->
+                <div class="gallery-item" data-category="eyebrows">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>🎯 眉毛造型设计</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>韩式半永久眉毛</h3>
+                        <p>设计风格：自然野生眉<br>维持时间：12个月<br>效果特点：立体自然，修饰脸型</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="eyebrows">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>🌟 精致眉形</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>精修眉毛造型</h3>
+                        <p>设计风格：欧式挑眉<br>维持时间：4周<br>效果特点：精致挺拔，提升气质</p>
+                    </div>
+                </div>
+
+                <!-- 美甲艺术案例 -->
+                <div class="gallery-item" data-category="nails">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>💅 美甲艺术设计</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>法式经典美甲</h3>
+                        <p>设计风格：经典法式<br>维持时间：3周<br>效果特点：优雅简约，适合日常</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nails">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>🌺 创意美甲</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>创意彩绘美甲</h3>
+                        <p>设计风格：花卉彩绘<br>维持时间：2周<br>效果特点：艺术创意，个性时尚</p>
+                    </div>
+                </div>
+
+                <!-- 身体护理案例 -->
+                <div class="gallery-item" data-category="body">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>🧘‍♀️ 身体护理体验</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>全身精油按摩</h3>
+                        <p>护理类型：芳香精油SPA<br>护理时长：90分钟<br>效果特点：深度放松，改善循环</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="body">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <span>💆‍♀️ 肩颈护理</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>肩颈理疗护理</h3>
+                        <p>护理类型：深层肌肉放松<br>护理时长：60分钟<br>效果特点：缓解疲劳，改善睡眠</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户反馈 -->
+        <section class="customer-feedback">
+            <h2>客户真实反馈</h2>
+            <div class="feedback-grid">
+                <div class="feedback-card">
+                    <div class="feedback-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"效果真的超出预期！美容师技术很专业，服务也很贴心。已经成为老客户了。"</p>
+                    <div class="feedback-author">- 李女士，面部护理客户</div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"睫毛嫁接的效果非常自然，朋友们都以为是我天生的！推荐大家来试试。"</p>
+                    <div class="feedback-author">- 王女士，睫毛嫁接客户</div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"身体护理让我彻底放松了，工作压力都消失了。环境也很舒适，值得推荐！"</p>
+                    <div class="feedback-author">- 张女士，身体护理客户</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 预约体验 -->
+        <section class="cta-section">
+            <h2>想要同样的美丽蜕变？</h2>
+            <p>立即预约，让我们为您打造专属的美丽方案</p>
+            <div class="cta-buttons">
+                <a href="booking.html" class="btn btn-primary">立即预约</a>
+                <a href="services.html" class="btn btn-secondary">查看服务</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 美丽人生美容院. 版权所有</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
